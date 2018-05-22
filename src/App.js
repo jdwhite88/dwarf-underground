@@ -13,11 +13,33 @@ class App extends Component {
         <main className="expanded row">
           <Article />
           <Ad />
-          <OtherArticles />
+          
+          <OtherArticles articles={[
+            {
+              src: "https://www.enclavepublishing.com/wp-content/uploads/2015/11/tumblr_inline_mtvwr6T4qH1r8eb4v.gif",
+              altText: "orc",
+              title: "Single Orcs in Indianapolis",
+            },
+            {
+              src: "https://images.fineartamerica.com/images-medium-large-5/rocky-mountain-landscape-meadow-in-spring-western-panorama-with-wildflowers-square-format-walt-curlee.jpg",
+              altText: "mountain",
+              title: "You won't believe what's under this mountain",
+            },
+            {
+              src: "http://orig01.deviantart.net/a278/f/2010/357/9/7/seamless___gold_coins_by_bartalon-d35iydr.jpg",
+              altText: "gold",
+              title: "Mine 20% more gold with One Weird Trick",
+            },
+            {
+              src: "http://cdn23.us1.fansshare.com/photos/thehobbit/the-hobbit-square-characters-833282558.jpg",
+              altText: "hobbit",
+              title: "Surprise for Indiana Hobbits born before 1999",
+            },
+          ]} />
         </main>
-        <footer class="expanded row">
+        <footer className="expanded row">
           <h6>&copy; 2017 Erebor Industries</h6>
-          <h6 class="float-right">All rights reserved</h6>
+          <h6 className="float-right">All rights reserved</h6>
         </footer>
       </div>
     );
